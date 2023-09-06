@@ -9,14 +9,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-resources:
- repositories:
-   - repository: mygit
-     endpoint: 
-  
 steps:
-- checkout: 
-  
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
